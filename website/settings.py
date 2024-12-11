@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     "django_pesapal",
     'django_celery_beat',
     'django_crontab',
+    'django_cron',
 ]
 
 MIDDLEWARE = [
