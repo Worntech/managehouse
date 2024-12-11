@@ -31,23 +31,8 @@ urlpatterns = [
     path("allpayment/",views.allpayment,name = "allpayment"),
     
     path("manual_control/",views.manual_control,name = "manual_control"),
+
     
-    # FOR CONNECTION TO THE HARDWARE
-    path('led_on/', views.led_on, name='led_on'),
-    path('led_off/', views.led_off, name='led_off'),
-    
-    path('display_data/', views.display_data, name='display_data'),
-    
-    path('highdoorone/', views.highdoorone, name='highdoorone'),
-    path('lowdoorone/', views.lowdoorone, name='lowdoorone'),
-    path('highdoortwo/', views.highdoortwo, name='highdoortwo'),
-    path('lowdoortwo/', views.lowdoortwo, name='lowdoortwo'),
-    path('highdoorthree/', views.highdoorthree, name='highdoorthree'),
-    path('lowdoorthree/', views.lowdoorthree, name='lowdoorthree'),
-    path('highdoorfour/', views.highdoorfour, name='highdoorfour'),
-    path('lowdoorfour/', views.lowdoorfour, name='lowdoorfour'),
-    path('highdoorfive/', views.highdoorfive, name='highdoorfive'),
-    path('lowdoorfive/', views.lowdoorfive, name='lowdoorfive'),
     
     path('viewroom/<str:pk>/', views.viewroom.as_view(), name = "viewroom"),
     path('payment/<int:product_id>/', views.PaymentView.as_view(), name='payment'),  # Update this line
